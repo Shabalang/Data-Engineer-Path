@@ -1,0 +1,113 @@
+what is it?
+used for	To store and process huge amounts of data
+
+Is it a full on database?
+No, It is an Alternative File System with Processing library
+
+Hadoop is an addition to__________ not a substitution. 
+RDBMS or NoSQL
+
+List the Limits of RDBMS
+Scalability (can not handle Petabyte Ranges)
+It is Not Real Time
+Queryability
+
+Database Choices:	
+File systmes: Hadoop
+NoSQL: key/val such as RedS, ColumnStore such as DbMango, Graph
+RDBMS: MySQL, SQL Server, Oracle
+
+what is Cap Theory and name sub sections of it?
+Consistency: think of bank transaction, if you deposit money from one account to another either you want both to happen or None.
+Availability: Up time, you can make copies of data so data is available regardless.
+Partitioning: Scalability, you can split your set of data across multiple processing power, like VMS, machines (RDBMS fails here)
+
+how many of the Cap Theory rules must hold in Order to call it a database?	2 out of 3
+
+What Condition of Cap Theory does Hadoop Hold?	
+Partitioning(Scability): Hadoop can run of cheap machines for data storage, cheap to scale, infinitely.
+Availability(Flexibility): Makes 3 copies of data, so uptime is forever.
+
+What kind of data is appropriate for Hadoop?
+Behavioral data: Data processed as group vs individual queries, like health care.
+
+What kind of data is NOT appropriate for Hadoop?
+LOB (Line of Business data): Usually Transnational (think of bank transaction, if you deposit money from one account to another either you want both to happen or None.) and not a good fit
+
+What is Hadoop?	
+Two Components, deployed with other projects
+
+Name Hadoop two components
+Open-Source data Storage: HDFS
+Processing API: MapReduce
+
+Describe what it means that Hadoop is deployed with other projects?
+Like HBase, Hive, Pig, etc
+
+What is HDFS?
+Name of the File system that Hadoop uses, Hadoop Distributed File System
+
+Where did HDFS come from?
+Googles GDFS, they made it when they wanted to Index the Entire Internet
+
+Name different Types of Hadoop Distributions
+Open Source, Commercial, Cloud
+
+What is Hadoop Open source?
+Apache Hadoop
+
+What is Hadoop Commercial?
+They are built around the Opensource that implement some functionality with extras.
+Cloudera
+HoronWorks
+MapR
+
+What is Hadoop Cloud?
+It implements one of the Open Source, or Commercial versions through cloud
+AWS
+Windows Azure HDInsight
+
+Why Use Hadoop?
+Cheaper, Faster, Better
+
+Give some Examples where Hadoop is Appropriate
+Risk Modeling, Customer Churn Analysis, Recommendation Engine, Ad Targeting, Transaction Analysis, Threeat Analisys, Search Quality
+
+How many copies normally HDFS make?
+3 copies, each on different node(machines, VMs, ..)
+
+What are the sizes f HDFS files?
+64 to 128 mgb
+
+When HBase is used?
+Not everyone has the technical knowladge to use the processing frameworks (MapReduce) to process data in Hadoop or work with the files, so they use HBASE
+
+What is HBase?
+It is a Libary that can porvide a WideColumnStore.(Schema)
+performing abstraction against Hadoop to give this type of information to you.
+Note: you only need Schema on read.	https://o.quizlet.com/d9jpYmnuIZfhyLYeGgWojQ_m.png
+
+Java Virtual VM & Hadoop
+Hadoop Processes run in separate JVMs
+JVMs do not share state
+JVM processes differ between Hadoop 1.0 vs 2.0
+
+Name Different Hadoop File Systems
+HDFS( Distirbuted, or Psudo-distirbuted)
+Regular File System
+Cloud File System
+
+Explain Hadoop HDFS(Distirbuted)
+Uses HDFS, triple replicated and and JVM daemons run in various locations according where you place them
+
+Explain Hadoop HDFS(Psudo-Distirbuted)
+Use HDFS designed for testing, Implemented on a single node on a single machine. Uses HDFS, and JVM daemons run Processes
+
+Hadoop with Regular File System
+Called the Standalone, just work with local file system with single JVM
+
+HAdoop Cloud File System
+Similer to stand Alone mode in that you are not using HDFS, Like AWS: S3 file system, or Azure: BLOB
+
+How Hadoop works picture
+https://o.quizlet.com/0N0sc3DOf-0n8jMyB3Dhfw_m.png
