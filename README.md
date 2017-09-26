@@ -38,3 +38,4 @@ I Have divided the subjects from above into 4 main sections(might change as time
       
   I will study through Projects, books and videos. 
   I will create Flash cards after each day of studying to ensure a continues review as I Complete Different Sections
+  
