@@ -1,6 +1,7 @@
 I have always loved the Field of Data Engineering, Now I have started to study from the basics.
 
 Some of the things I found Important(below I have divided them into sections):
+
     Statistical Analysis & modeling
     Hadoop-based Tech (MapReduce, Hive, Pig)
     SQL(MY SQL)
