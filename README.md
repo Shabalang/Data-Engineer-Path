@@ -20,20 +20,24 @@ Some of the things I found Important(below I have divided them into sections):
 I Have divided the subjects from above into 4 main sections(might change as time goes by)
 
  1-Data Analysis:
+ 
       MapReduce, Hadoop(Cloudera, IBM big, MapR)
       Data Mining & machine learning(Mahout & nerual Networks)
       Statistical Analysis(R, SPSS, SAS, MATLAB)
       Programming(C++, Scala, python, Java)
     
   2-Data Warehousing:
+  
       Relational(MySQL, Oracle)
       NoSQL(Cassandara, MongoDB)
     
-  3-Data Collection
+  3-Data Collection:
+  
       RESTful
       SQL
 
-  4-Data Transformation
+  4-Data Transformation:
+  
       ELT TOOLS(SSIS, Redpoint, Data Stage)
       Scripting
       
